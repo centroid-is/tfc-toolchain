@@ -18,6 +18,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     musl \
     musl-tools \
     ca-certificates \
+    make \
     && rm -rf /var/lib/apt/lists/*
 
 # Clone Flutter, precache, and clean up in a single layer
